@@ -1,0 +1,117 @@
+Claro! Aqui vão 3 tipos de códigos de JavaScript puro que são muito usados na maioria dos sites modernos — sem bibliotecas e sem frameworks:
+
+✅ 1. Manipulação do DOM (Document Object Model)
+
+É disparado o mais usado. Serve para mexer no HTML pelo JavaScript, como trocar textos, estilos, classes, criar elementos, remover elementos, etc.
+
+Exemplos típicos:
+
+selecionar elementos (querySelector)
+
+alterar conteúdo
+
+mostrar/esconder elementos
+
+trocar classes (para animações, menus, etc.)
+
+✅ 2. Eventos (cliques, teclado, scroll, input, etc.)
+
+Quase todos os sites têm interações.
+Eventos são usados para reagir quando o usuário faz algo.
+
+Exemplos:
+
+clique em botões
+
+enviar formulários
+
+movimento do mouse
+
+digitação em inputs
+
+scroll da página
+
+✅ 3. Requisições HTTP com fetch() (AJAX moderno)
+
+Muito usado para buscar dados de APIs ou enviar informações para o servidor sem recarregar a página.
+
+Exemplos:
+
+carregar produtos de uma loja
+
+enviar formulário via AJAX
+
+carregar posts, comentários
+
+consumir uma API externa
+
+Se quiser, posso te mostrar exemplos práticos desses três tipos funcionando na vida real.
+
+Você disse:
+sim
+O ChatGPT disse:
+
+Perfeito! Aqui vão exemplos práticos e bem realistas desses três tipos de código JavaScript puro que aparecem o tempo todo em sites profissionais — explicados de forma simples.
+
+✅ 1. Manipulação do DOM — Exemplo real
+
+Situação real: quando o usuário clica num botão e um texto muda.
+
+O que acontece: o JS altera um elemento HTML.
+
+document.querySelector('#titulo').textContent = 'Novo título atualizado!';
+
+
+Uso real:
+
+Atualizar preços
+
+Trocar mensagens
+
+Mexer em menus
+
+Criar elementos na tela
+
+✅ 2. Eventos — Exemplo real
+
+Situação real: um botão de "abrir menu" no celular.
+
+O que acontece: o JS espera o clique e executa algo.
+
+document.querySelector('#botao').addEventListener('click', () => {
+    document.querySelector('#menu').classList.toggle('ativo');
+});
+
+
+Uso real:
+
+Abrir/fechar modal
+
+Mostrar/esconder sidebar
+
+Validar formulário
+
+Botão “voltar ao topo”
+
+✅ 3. Requisições HTTP (fetch) — Exemplo real
+
+Situação real: carregar produtos de uma loja virtual sem recarregar a página.
+
+O que acontece: o JS busca dados de uma API.
+
+fetch('https://api.exemplo.com/produtos')
+  .then(res => res.json())
+  .then(dados => {
+      console.log(dados);
+  });
+
+
+Uso real:
+
+Carregar posts, comentários, vídeos
+
+Enviar formulários
+
+Criar dashboards
+
+Atualizar partes da página dinamicamente

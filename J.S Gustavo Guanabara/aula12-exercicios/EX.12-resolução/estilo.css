@@ -1,0 +1,42 @@
+
+body {
+    background-color: yellowgreen;
+    font: normal 16pt  Arial;
+
+
+}
+
+header {
+    color: whitesmoke;
+    text-align: center;
+
+
+}
+
+section {
+
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 15px;
+    width:auto;
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+
+
+
+}
+
+div {
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+
+    color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+
+
+}
+

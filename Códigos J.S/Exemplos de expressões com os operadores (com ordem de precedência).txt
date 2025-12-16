@@ -1,0 +1,86 @@
+Welcome to Node.js v22.20.0.
+Type ".help" for more information.
+> 5> 2
+true
+> 8<4
+false
+>
+> var A = 8
+undefined
+> var B = 15
+undefined
+> var a > var b
+var a > var b
+      ^
+
+Uncaught SyntaxError: Unexpected token '>'
+> a > b
+Uncaught ReferenceError: a is not defined
+> var a = 8
+undefined
+>
+> var b = 15
+undefined
+> a > b
+false
+> a < b
+true
+>
+> a <= b - 10
+false
+>
+> var a = 100.50
+undefined
+> var b = 100.80
+undefined
+> var idade = 15
+undefined
+> idade >= && idade <=
+idade >= && idade <=
+         ^^
+
+Uncaught SyntaxError: Unexpected token '&&'
+> idade >= 15 && idade >= 17
+false
+> var media = 5.5
+undefined
+>
+> media 7 ? 'APROVADO' : 'REPROVADO'
+media 7 ? 'APROVADO' : 'REPROVADO'
+      ^
+
+Uncaught SyntaxError: Unexpected number
+>
+> media >7 ? 'APROVADO : 'REPROVADO'
+media >7 ? 'APROVADO : 'REPROVADO'
+                        ^^^^^^^^^
+
+Uncaught SyntaxError: Unexpected identifier 'REPROVADO'
+>
+> media > 7 ? 'APROVADO' : 'REPROVADO'
+'REPROVADO'
+>
+> media +=2
+7.5
+> media > 7 ? 'Aprovado' : 'Reprovado'
+'Aprovado'
+>
+> var x = 8
+undefined
+> x
+8
+> var res = x % 2 ==0 ? 5:9
+undefined
+> x
+8
+> res
+5
+>
+> var idade = 19
+undefined
+> idade
+19
+> var r = idade >= 18 ? 'MAIOR' : 'MENOR'
+undefined
+> r
+'MAIOR'

@@ -1,0 +1,229 @@
+✅ 1. Criar um contador simples (treina DOM + eventos + variáveis + if/else)
+
+Um botão “+” e um botão “–”.
+Quando clicar, o número aumenta/diminui.
+
+Você treina:
+✔ const
+✔ function
+✔ addEventListener
+✔ innerHTML
+✔ if/else (para impedir valores negativos se quiser)
+
+✅ 2. Criar um verificador de idade
+
+Você digita o ano de nascimento e o JS calcula a idade.
+
+Você treina:
+✔ function
+✔ if / else
+✔ pegar valores de inputs
+✔ mostrar resultado com innerHTML
+
+✅ 3. Criar um "modo escuro" no site
+
+Um botão ativará e desativará o dark mode.
+
+Você treina:
+✔ DOM
+✔ classList.toggle()
+✔ eventos
+✔ const
+
+✅ 4. Criar um validador de senha
+
+Se a senha tiver menos de 6 caracteres → mostrar mensagem “Senha muito curta”.
+
+Você treina:
+✔ if/else
+✔ value do input
+✔ innerHTML
+
+✅ 5. Criar uma tabuada
+
+Você digita um número e o JS gera uma tabuada de 1 a 10.
+
+Você treina:
+✔ loops (for)
+✔ DOM
+✔ innerHTML
+
+✅ 6. Criar um relógio digital simples
+
+Atualizando a cada segundo na tela.
+
+Você treina:
+✔ setInterval
+✔ manipular DOM
+✔ function
+
+✅ 7. Criar um sorteador de números
+
+Clicar num botão → sortear um número de 1 a 10.
+
+Você treina:
+✔ Math.random()
+✔ const
+✔ innerHTML
+✔ event listener
+
+Quer que eu escolha um desses e monte o código passo a passo para você treinar junto?
+
+É só me dizer qual você quer começar.
+
+Você disse:
+Queria que você me mostrasse todos esses códigos que vou praticar 
+O ChatGPT disse:
+
+Claro, Celso! Aqui estão todos os códigos completos, um por um, para você copiar, colar e praticar.
+Todos são JavaScript puro, simples e perfeitos para quem está começando.
+
+✅ 1. Contador (+ / –)
+
+HTML
+
+<h2 id="resultado">0</h2>
+<button id="menos">-</button>
+<button id="mais">+</button>
+
+
+JavaScript
+
+const res = document.querySelector('#resultado');
+const menos = document.querySelector('#menos');
+const mais = document.querySelector('#mais');
+
+let numero = 0;
+
+mais.addEventListener('click', function() {
+    numero++;
+    res.innerHTML = numero;
+});
+
+menos.addEventListener('click', function() {
+    numero--;
+    res.innerHTML = numero;
+});
+
+✅ 2. Verificador de idade
+
+HTML
+
+<input type="number" id="ano" placeholder="Ano de nascimento">
+<button id="verificar">Verificar</button>
+<p id="saida"></p>
+
+
+JavaScript
+
+document.querySelector('#verificar').addEventListener('click', function() {
+    const ano = Number(document.querySelector('#ano').value);
+    const atual = new Date().getFullYear();
+
+    if (ano == 0 || ano > atual) {
+        document.querySelector('#saida').innerHTML = "Ano inválido.";
+    } else {
+        const idade = atual - ano;
+        document.querySelector('#saida').innerHTML = `Você tem ${idade} anos.`;
+    }
+});
+
+✅ 3. Modo escuro
+
+HTML
+
+<button id="toggle">Mudar tema</button>
+
+
+CSS (simples para visualizar)
+
+.dark {
+    background: black;
+    color: white;
+}
+
+
+JavaScript
+
+document.querySelector('#toggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark');
+});
+
+✅ 4. Validador de senha
+
+HTML
+
+<input type="password" id="senha" placeholder="Digite a senha">
+<button id="checar">Checar</button>
+<p id="msg"></p>
+
+
+JavaScript
+
+document.querySelector('#checar').addEventListener('click', function() {
+    const senha = document.querySelector('#senha').value;
+
+    if (senha.length < 6) {
+        document.querySelector('#msg').innerHTML = "Senha muito curta!";
+    } else {
+        document.querySelector('#msg').innerHTML = "Senha válida!";
+    }
+});
+
+✅ 5. Tabuada
+
+HTML
+
+<input type="number" id="num" placeholder="Digite um número">
+<button id="gerar">Gerar tabuada</button>
+<div id="resultado"></div>
+
+
+JavaScript
+
+document.querySelector('#gerar').addEventListener('click', function() {
+    const numero = Number(document.querySelector('#num').value);
+    const res = document.querySelector('#resultado');
+    res.innerHTML = "";
+
+    for (let i = 1; i <= 10; i++) {
+        res.innerHTML += `${numero} x ${i} = ${numero * i}<br>`;
+    }
+});
+
+✅ 6. Relógio digital
+
+HTML
+
+<h1 id="relogio"></h1>
+
+
+JavaScript
+
+function atualizarRelogio() {
+    const agora = new Date();
+    const horas = agora.getHours();
+    const min = agora.getMinutes();
+    const seg = agora.getSeconds();
+
+    document.querySelector('#relogio').innerHTML =
+        `${horas}:${min}:${seg}`;
+}
+
+setInterval(atualizarRelogio, 1000);
+atualizarRelogio();
+
+✅ 7. Sorteador de números
+
+HTML
+
+<button id="sortear">Sortear número</button>
+<p id="saida"></p>
+
+
+JavaScript
+
+document.querySelector('#sortear').addEventListener('click', function() {
+    const numero = Math.floor(Math.random() * 10) + 1;
+    document.querySelector('#saida').innerHTML = `Número sorteado: ${numero}`;
+});

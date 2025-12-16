@@ -1,0 +1,226 @@
+Estou guardando todas essas informações que vc está me passando para que eu siga exatamente. Agora preciso das respostas dos exercicios para depois eu ver e comparar se fiz o código correto
+O ChatGPT disse:
+
+Perfeito, Celso! Aqui estão todas as respostas dos exercícios, organizadas exatamente na mesma ordem que eu te dei — assim você pode comparar depois com o que você fizer.
+
+Vou te entregar tudo bem limpo e direto, sem enrolação.
+
+🔵 1️⃣ VARIÁVEIS — Respostas
+✔ Exercício 1
+let n1 = 5;
+let n2 = 8;
+console.log(n1 + n2);
+
+✔ Exercício 2
+let nome = "Celso";
+let idade = 30;
+console.log(`Meu nome é ${nome} e eu tenho ${idade} anos.`);
+
+✔ Exercício 3
+let celsius = 25;
+let fahrenheit = (celsius * 9/5) + 32;
+console.log(fahrenheit);
+
+🟣 2️⃣ OPERADORES — Respostas
+✔ Exercício 1
+let a = Number(prompt("Digite o primeiro número"));
+let b = Number(prompt("Digite o segundo número"));
+
+if (a > b) {
+    console.log("O primeiro é maior");
+} else {
+    console.log("O segundo é maior");
+}
+
+✔ Exercício 2
+let idade = Number(prompt("Digite sua idade"));
+
+if (idade >= 18) {
+    console.log("Maior de idade");
+} else {
+    console.log("Menor de idade");
+}
+
+✔ Exercício 3
+let num = 7;
+
+if (num % 2 === 0) {
+    console.log("Par");
+} else {
+    console.log("Ímpar");
+}
+
+🔴 3️⃣ IF / ELSE — Respostas
+✔ Exercício 1
+let nota = 7;
+
+if (nota >= 7) {
+    console.log("Aprovado");
+} else {
+    console.log("Reprovado");
+}
+
+✔ Exercício 2
+let senha = "abc123";
+
+if (senha.length > 6) {
+    console.log("Senha válida");
+} else {
+    console.log("Senha muito curta");
+}
+
+✔ Exercício 3
+let hora = 15;
+
+if (hora < 12) {
+    console.log("Bom dia");
+} else if (hora < 18) {
+    console.log("Boa tarde");
+} else {
+    console.log("Boa noite");
+}
+
+🟢 4️⃣ FUNÇÕES — Respostas
+✔ Exercício 1
+function saudar(nome) {
+    return `Olá, ${nome}`;
+}
+
+console.log(saudar("Celso"));
+
+✔ Exercício 2
+function multiplicar(a, b) {
+    return a * b;
+}
+
+console.log(multiplicar(3, 4));
+
+✔ Exercício 3
+function verificarIdade(idade) {
+    if (idade >= 18) {
+        return "Maior de idade";
+    } else {
+        return "Menor de idade";
+    }
+}
+
+console.log(verificarIdade(20));
+
+🟡 5️⃣ DOM — Respostas
+✔ Exercício 1
+document.querySelector('#btn').addEventListener('click', () => {
+    document.querySelector('#msg').innerHTML = "Você clicou!";
+});
+
+✔ Exercício 2
+document.querySelector('#cor').addEventListener('click', () => {
+    document.querySelector('#caixa').style.background = "blue";
+});
+
+✔ Exercício 3
+document.querySelector('#enviar').addEventListener('click', () => {
+    let texto = document.querySelector('#entrada').value;
+    document.querySelector('#saida').innerHTML = texto;
+});
+
+🟠 6️⃣ EVENTOS — Respostas
+✔ Exercício 1
+document.querySelector('#texto').addEventListener('input', () => {
+    document.querySelector('#res').innerHTML =
+        document.querySelector('#texto').value;
+});
+
+✔ Exercício 2
+let btn = document.querySelector('#botao');
+
+btn.addEventListener('mouseover', () => {
+    btn.style.background = "red";
+});
+
+btn.addEventListener('mouseout', () => {
+    btn.style.background = "";
+});
+
+✔ Exercício 3
+let contador = 0;
+
+document.querySelector('#somar').addEventListener('click', () => {
+    contador++;
+    document.querySelector('#num').innerHTML = contador;
+});
+
+🔵 7️⃣ LOOPS — Respostas
+✔ Exercício 1
+for (let i = 1; i <= 20; i++) {
+    console.log(i);
+}
+
+✔ Exercício 2
+for (let i = 0; i <= 50; i += 2) {
+    console.log(i);
+}
+
+✔ Exercício 3
+let n = 7;
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`${n} x ${i} = ${n * i}`);
+}
+
+🟤 8️⃣ ARRAYS / OBJETOS — Respostas
+✔ Exercício 1
+let nomes = ["Ana", "Pedro", "Luiz", "Maria", "João"];
+
+for (let i = 0; i < nomes.length; i++) {
+    console.log(nomes[i]);
+}
+
+✔ Exercício 2
+let numeros = [1, 2, 3, 4, 5];
+let soma = 0;
+
+for (let n of numeros) {
+    soma += n;
+}
+
+console.log(soma);
+
+✔ Exercício 3
+let pessoa = {
+    nome: "Carlos",
+    idade: 28,
+    profissao: "Programador"
+};
+
+console.log(pessoa.nome);
+console.log(pessoa.idade);
+console.log(pessoa.profissao);
+
+⚫ 9️⃣ FETCH (APIs) — Respostas
+✔ Exercício 1
+fetch('https://api.github.com/zen')
+  .then(r => r.text())
+  .then(txt => console.log(txt));
+
+✔ Exercício 2
+fetch('https://jsonplaceholder.typicode.com/users')
+  .then(r => r.json())
+  .then(dados => console.log(dados[0].name));
+
+✔ Exercício 3
+document.querySelector('#btn').addEventListener('click', () => {
+    fetch('https://dog.ceo/api/breeds/image/random')
+      .then(r => r.json())
+      .then(data => {
+          document.querySelector('#foto').src = data.message;
+      });
+});
+
+✔ Tudo organizado, completo e na sequência certa.
+
+Se quiser, posso agora:
+👉 montar um PDF com todos os exercícios
+👉 montar um arquivo HTML com tudo separado por seções
+👉 criar uma página para você praticar dentro do navegador
+
+É só pedir!

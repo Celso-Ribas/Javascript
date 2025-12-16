@@ -1,0 +1,134 @@
+Na verdade eu gostaria de 3 exercicios de cada para que eu possa praticar
+O ChatGPT disse:
+
+Perfeito, Celso! Aqui vão 3 exercícios para cada assunto, do mais simples ao mais útil.
+Você vai conseguir praticar variáveis, operadores, if/else, funções, DOM, eventos, loops, arrays/objetos e APIs — tudo com JavaScript puro.
+
+Sem códigos prontos — só o enunciado, para você treinar sozinho!
+Se quiser, depois eu corrijo o seu.
+
+🔵 1️⃣ VARIÁVEIS — 3 exercícios
+Exercício 1:
+
+Crie duas variáveis com números e mostre no console a soma delas.
+
+Exercício 2:
+
+Crie uma variável com seu nome e outra com sua idade. Mostre no console uma frase usando ambas.
+
+Exercício 3:
+
+Crie uma variável que guarda a temperatura em Celsius e outra que converte para Fahrenheit.
+
+🟣 2️⃣ OPERADORES — 3 exercícios
+Exercício 1:
+
+Peça dois números ao usuário (prompt) e mostre qual é o maior.
+
+Exercício 2:
+
+Peça a idade do usuário e verifique se ele é maior de 18.
+
+Exercício 3:
+
+Verifique se um número é par ou ímpar usando o operador %.
+
+🔴 3️⃣ IF / ELSE — 3 exercícios
+Exercício 1:
+
+Se a pessoa tirou nota 7 ou mais, escreva "Aprovado", senão "Reprovado".
+
+Exercício 2:
+
+Verifique se a senha tem mais de 6 caracteres.
+Se tiver, escreva "Senha válida".
+
+Exercício 3:
+
+Pergunte a hora (0–23).
+Se for < 12 → "Bom dia"
+Se for < 18 → "Boa tarde"
+Senão → "Boa noite"
+
+🟢 4️⃣ FUNÇÕES — 3 exercícios
+Exercício 1:
+
+Crie uma função que recebe um nome e retorna “Olá, [nome]”.
+
+Exercício 2:
+
+Crie uma função que recebe dois números e retorna a multiplicação deles.
+
+Exercício 3:
+
+Crie uma função que recebe a idade e retorna se a pessoa é maior ou menor de idade.
+
+🟡 5️⃣ DOM (selecionar e modificar HTML) — 3 exercícios
+Exercício 1:
+
+Ao clicar em um botão, mude o conteúdo de um <p> para “Você clicou!”.
+
+Exercício 2:
+
+Ao clicar em outro botão, mude a cor de fundo de um <div>.
+
+Exercício 3:
+
+Pegue o valor de um input e mostre na tela dentro de um <h2>.
+
+🟠 6️⃣ EVENTOS — 3 exercícios
+Exercício 1:
+
+Quando o usuário digitar no input, mostre em tempo real o texto em uma <div>.
+
+Exercício 2:
+
+Crie um botão que, ao passar o mouse por cima, muda de cor.
+
+Exercício 3:
+
+Crie um botão que, ao clicar, soma +1 num contador na tela.
+
+🔵 7️⃣ LOOPS — 3 exercícios
+Exercício 1:
+
+Use um for para mostrar os números de 1 a 20 na tela.
+
+Exercício 2:
+
+Mostre os números pares de 0 a 50.
+
+Exercício 3:
+
+Peça um número e gere uma tabuada (1 a 10).
+
+🟤 8️⃣ ARRAYS / OBJETOS — 3 exercícios
+Exercício 1:
+
+Crie um array com 5 nomes e mostre todos com um loop.
+
+Exercício 2:
+
+Crie um array de números e mostre a soma de todos eles.
+
+Exercício 3:
+
+Crie um objeto com nome, idade e profissão.
+Mostre cada propriedade no console.
+
+⚫ 9️⃣ FETCH (APIs) — 3 exercícios
+Exercício 1:
+
+Use fetch para buscar um texto simples de uma API pública e mostre no console.
+
+Exercício 2:
+
+Use fetch para buscar um JSON (ex.: lista de usuários) e mostrar o nome do primeiro.
+
+Exercício 3:
+
+Ao clicar num botão, use fetch para carregar uma imagem de API e trocar a <img> do HTML.
+
+🚀 Se quiser, posso montar um arquivo HTML + JS vazio só com os títulos desses exercícios para você ir completando.
+
+Ou você pode ir fazendo um por um, e eu corrijo.
