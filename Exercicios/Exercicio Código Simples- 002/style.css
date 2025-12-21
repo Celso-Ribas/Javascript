@@ -67,7 +67,7 @@ button {
     height: 40px;
     font: bold 1.4rem serif;
     background-color: black;
-    color: beige;
+    color: aquamarine;
     outline: none;
     border-radius: 5px;
     cursor: pointer;
@@ -76,7 +76,7 @@ button {
 .result {
     display: flex;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     align-items: center;
     width: 300px;
     height: 150px;
@@ -84,7 +84,7 @@ button {
     font: italic 1.5rem serif;
     box-shadow: 0 0 10px black;
     background-color: black;
-    color: beige;
+    color: aquamarine;
     padding: 20px;
     box-sizing: border-box;
     user-select: none;
